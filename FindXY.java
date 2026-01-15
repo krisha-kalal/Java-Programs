@@ -1,0 +1,20 @@
+//Write a program that solves the following equation and displays the value x and y: 1) 3.4x+50.2y=44.5 2) 2.1x+.55y=5.9 (Assume Cramer’s rule to solve equation ax+by=e x=ed-bf/ad-bccx+dy=f y=af-ec/ad-bc )
+class FindXY
+{
+    	public static void main(String args[])
+    	{
+        	double a = 3.4, b = 50.2, e = 44.5;
+        	double c = 2.1, d = 0.55, f = 5.9;
+
+        	double denominator = (a * d) - (b * c);
+        	double x = (e * d - b * f) / denominator;
+        	double y = (a * f - e * c) / denominator;
+
+			System.out.println("Denominator = " + denominator);
+        	System.out.println("Value of x = " + x);
+        	System.out.println("Value of y = " + y);
+			
+			System.out.println("Name: Krisha Kalal");
+			System.out.println("Enrolment no: 2501030430001");
+    	}
+}
